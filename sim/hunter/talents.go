@@ -38,7 +38,7 @@ func (hunter *Hunter) applyThrillOfTheHunt() {
 
 		ExtraCondition: func(sim *core.Simulation, spell *core.Spell, result *core.SpellResult) bool {
 			return spell.CurCast.Cost > 0
-		},
+		}
 
 		Handler: func(sim *core.Simulation, spell *core.Spell, result *core.SpellResult) {
 			tothAura.Activate(sim)
